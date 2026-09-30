@@ -1,0 +1,198 @@
+/* Colors live in one place, as named tokens. Dark mode swaps the values. */
+:root {
+  --paper: #f6efe4;
+  --card: #fffaf2;
+  --ink: #2a2723;
+  --muted: #6f675d;
+  --line: #e4d9c8;
+  --sun: #a85410;
+  --sun-soft: #f3dcc3;
+  --on-sun: #ffffff;
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #1c1a17;
+    --card: #26231f;
+    --ink: #efe7da;
+    --muted: #a99f91;
+    --line: #3a352f;
+    --sun: #f0a25a;
+    --sun-soft: #4a3522;
+    --on-sun: #1c1a17;
+    color-scheme: dark;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html, body { margin: 0; }
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.4;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* The one screen: a column that fills the phone, with room for the notch */
+.screen {
+  min-height: 100vh;
+  min-height: 100dvh;
+  max-width: 34rem;
+  margin: 0 auto;
+  padding: calc(env(safe-area-inset-top) + 16px) 16px calc(env(safe-area-inset-bottom) + 16px);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.top p { margin: 0; }
+.date { color: var(--muted); font-size: 0.95rem; }
+.streak {
+  font-weight: 600;
+  font-size: 0.95rem;
+  background: var(--sun-soft);
+  color: var(--ink);
+  padding: 4px 12px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+/* The quote takes whatever space is left, so the screen feels full, not cramped */
+.quote {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 22px 20px;
+}
+.quote blockquote {
+  margin: 0 0 16px;
+  font-family: var(--serif);
+  font-size: 1.4rem;
+  line-height: 1.42;
+  text-wrap: pretty;
+}
+.quote.long blockquote { font-size: 1.15rem; }
+.quote.longer blockquote { font-size: 1.05rem; line-height: 1.38; }
+.quote p { margin: 0; }
+.source { font-weight: 600; }
+.translator { color: var(--muted); font-size: 0.9rem; margin-top: 2px !important; }
+
+/* Five emoji, one row, big enough for a sleepy thumb */
+.emojis {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+}
+.emojis button {
+  font-size: 1.7rem;
+  line-height: 1;
+  padding: 8px 0;
+  min-height: 48px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  cursor: pointer;
+  transition: transform 0.12s ease;
+}
+.emojis button:active { transform: scale(0.94); }
+.emojis button[aria-pressed="true"] {
+  background: var(--sun-soft);
+  border-color: var(--sun);
+  box-shadow: 0 0 0 1px var(--sun) inset;
+}
+
+.comment { margin-top: 8px; }
+.comment textarea {
+  width: 100%;
+  font: inherit;
+  font-size: 16px; /* 16px stops iPhone from zooming in on tap */
+  color: var(--ink);
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 10px 12px;
+  resize: none;
+}
+.comment textarea:focus, select:focus, input:focus, button:focus-visible {
+  outline: 2px solid var(--sun);
+  outline-offset: 1px;
+}
+.comment-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4px;
+}
+.count { color: var(--muted); font-size: 0.85rem; }
+
+button { font: inherit; color: var(--ink); }
+
+#save, .bell, .install {
+  background: var(--sun);
+  color: var(--on-sun);
+  border: 0;
+  border-radius: 999px;
+  padding: 8px 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+#save:disabled { opacity: 0.5; cursor: default; }
+
+/* Settings: two short rows under a thin line */
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+  font-size: 0.9rem;
+}
+.setting-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.setting { display: flex; align-items: center; gap: 8px; color: var(--muted); }
+.setting input, .setting select {
+  font: inherit;
+  font-size: 16px;
+  color: var(--ink);
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 5px 8px;
+  min-width: 0;
+}
+.bell, .install {
+  background: transparent;
+  color: var(--sun);
+  border: 1px solid var(--sun);
+  padding: 6px 14px;
+}
+.bell.on { background: var(--sun-soft); color: var(--ink); border-color: var(--sun-soft); }
+.hint { margin: 0; color: var(--muted); font-size: 0.85rem; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px; height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}

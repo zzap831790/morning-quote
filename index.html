@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Morning Quote</title>
+  <meta name="description" content="One quote from a great book each morning.">
+
+  <!-- Install to home screen: the manifest for Android, the apple lines for iPhone -->
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#f6efe4" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1c1a17" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="icons/icon-192.png" type="image/png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Morning">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="screen">
+
+    <header class="top">
+      <p class="date" id="date"></p>
+      <p class="streak" id="streak" aria-live="polite"></p>
+    </header>
+
+    <article class="quote" id="quote" aria-live="polite">
+      <blockquote id="quote-text">Loading today's quote…</blockquote>
+      <p class="source" id="quote-source"></p>
+      <p class="translator" id="quote-translator"></p>
+    </article>
+
+    <section class="react" aria-label="Your reaction">
+      <div class="emojis" id="emojis" role="group" aria-label="Pick one"></div>
+
+      <form class="comment" id="comment-form">
+        <label for="comment" class="visually-hidden">Your thought on today's quote</label>
+        <textarea id="comment" maxlength="200" rows="2" placeholder="One thought, two sentences at most"></textarea>
+        <div class="comment-foot">
+          <span class="count" id="count">0 / 200</span>
+          <button type="submit" id="save">Save</button>
+        </div>
+      </form>
+    </section>
+
+    <footer class="settings" aria-label="Settings">
+      <div class="setting-row">
+        <label class="setting">
+          <span>Remind me at</span>
+          <input type="time" id="reminder-time" value="07:00">
+        </label>
+        <button type="button" class="bell" id="bell" aria-pressed="false">Turn on</button>
+      </div>
+      <div class="setting-row">
+        <label class="setting">
+          <span>Tradition</span>
+          <select id="tradition">
+            <option value="stoic">Stoic</option>
+            <option value="russian">Russian</option>
+            <option value="scifi">Science fiction</option>
+            <option value="scripture">Scripture</option>
+          </select>
+        </label>
+        <button type="button" class="install" id="install" hidden>Install app</button>
+      </div>
+      <p class="hint" id="hint" hidden></p>
+    </footer>
+
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

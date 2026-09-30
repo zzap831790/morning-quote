@@ -1,0 +1,416 @@
+[
+ {
+  "id": "stoic-01",
+  "tradition": "stoic",
+  "file": "se_meditations_long.txt",
+  "author": "Marcus Aurelius",
+  "book": "Meditations",
+  "translator": "George Long",
+  "text": "Begin the morning by saying to thyself, I shall meet with the busybody, the ungrateful, arrogant, deceitful, envious, unsocial"
+ },
+ {
+  "id": "stoic-02",
+  "tradition": "stoic",
+  "file": "se_meditations_long.txt",
+  "author": "Marcus Aurelius",
+  "book": "Meditations",
+  "translator": "George Long",
+  "text": "In the morning when thou risest unwillingly, let this thought be present I am rising to the work of a human being"
+ },
+ {
+  "id": "stoic-03",
+  "tradition": "stoic",
+  "file": "se_meditations_long.txt",
+  "author": "Marcus Aurelius",
+  "book": "Meditations",
+  "translator": "George Long",
+  "text": "Such as are thy habitual thoughts, such also will be the character of thy mind; for the soul is dyed by the thoughts"
+ },
+ {
+  "id": "stoic-04",
+  "tradition": "stoic",
+  "file": "se_meditations_long.txt",
+  "author": "Marcus Aurelius",
+  "book": "Meditations",
+  "translator": "George Long",
+  "text": "No longer talk at all about the kind of man that a good man ought to be, but be such"
+ },
+ {
+  "id": "stoic-05",
+  "tradition": "stoic",
+  "file": "se_meditations_long.txt",
+  "author": "Marcus Aurelius",
+  "book": "Meditations",
+  "translator": "George Long",
+  "text": "The best way of avenging thyself is not to become like the wrong doer"
+ },
+ {
+  "id": "stoic-06",
+  "tradition": "stoic",
+  "file": "se_meditations_long.txt",
+  "author": "Marcus Aurelius",
+  "book": "Meditations",
+  "translator": "George Long",
+  "text": "Look within. Within is the fountain of good, and it will ever bubble up, if thou wilt ever dig"
+ },
+ {
+  "id": "stoic-07",
+  "tradition": "stoic",
+  "file": "se_meditations_long.txt",
+  "author": "Marcus Aurelius",
+  "book": "Meditations",
+  "translator": "George Long",
+  "text": "Loss is nothing else than change"
+ },
+ {
+  "id": "stoic-08",
+  "tradition": "stoic",
+  "file": "se_epictetus_long.txt",
+  "author": "Epictetus",
+  "book": "The Enchiridion",
+  "translator": "George Long",
+  "where": "Chapter I",
+  "text": "Of things some are in our power, and others are not"
+ },
+ {
+  "id": "stoic-09",
+  "tradition": "stoic",
+  "file": "se_epictetus_long.txt",
+  "author": "Epictetus",
+  "book": "The Enchiridion",
+  "translator": "George Long",
+  "where": "Chapter V",
+  "text": "Men are disturbed not by the things which happen, but by the opinions about the things"
+ },
+ {
+  "id": "stoic-10",
+  "tradition": "stoic",
+  "file": "se_epictetus_long.txt",
+  "author": "Epictetus",
+  "book": "The Enchiridion",
+  "translator": "George Long",
+  "where": "Chapter VIII",
+  "text": "Seek not that the things which happen should happen as you wish; but wish the things which happen to be as they are, and you will have a tranquil flow of life"
+ },
+ {
+  "id": "russian-01",
+  "tradition": "russian",
+  "file": "karamazov.txt",
+  "author": "Fyodor Dostoevsky",
+  "book": "The Brothers Karamazov",
+  "translator": "Constance Garnett",
+  "text": "Above all, don't lie to yourself. The man who lies to himself and listens to his own lie comes to such a pass that he cannot distinguish the truth within him, or around him, and so loses all respect for himself and for others"
+ },
+ {
+  "id": "russian-02",
+  "tradition": "russian",
+  "file": "karamazov.txt",
+  "author": "Fyodor Dostoevsky",
+  "book": "The Brothers Karamazov",
+  "translator": "Constance Garnett",
+  "text": "love in action is a harsh and dreadful thing compared with love in dreams"
+ },
+ {
+  "id": "russian-03",
+  "tradition": "russian",
+  "file": "karamazov.txt",
+  "author": "Fyodor Dostoevsky",
+  "book": "The Brothers Karamazov",
+  "translator": "Constance Garnett",
+  "text": "Love all God's creation, the whole and every grain of sand in it. Love every leaf, every ray of God's light"
+ },
+ {
+  "id": "russian-04",
+  "tradition": "russian",
+  "file": "crime.txt",
+  "author": "Fyodor Dostoevsky",
+  "book": "Crime and Punishment",
+  "translator": "Constance Garnett",
+  "text": "To go wrong in one's own way is better than to go right in someone else's"
+ },
+ {
+  "id": "russian-05",
+  "tradition": "russian",
+  "file": "crime.txt",
+  "author": "Fyodor Dostoevsky",
+  "book": "Crime and Punishment",
+  "translator": "Constance Garnett",
+  "text": "It would be interesting to know what it is men are most afraid of. Taking a new step, uttering a new word is what they fear most"
+ },
+ {
+  "id": "russian-06",
+  "tradition": "russian",
+  "file": "warpeace.txt",
+  "author": "Leo Tolstoy",
+  "book": "War and Peace",
+  "translator": "Louise and Aylmer Maude",
+  "text": "We imagine that when we are thrown out of our usual ruts all is lost, but it is only then that what is new and good begins. While there is life there is happiness"
+ },
+ {
+  "id": "russian-07",
+  "tradition": "russian",
+  "file": "warpeace.txt",
+  "author": "Leo Tolstoy",
+  "book": "War and Peace",
+  "translator": "Louise and Aylmer Maude",
+  "text": "Everything comes in time to him who knows how to wait"
+ },
+ {
+  "id": "russian-08",
+  "tradition": "russian",
+  "file": "warpeace.txt",
+  "author": "Leo Tolstoy",
+  "book": "War and Peace",
+  "translator": "Louise and Aylmer Maude",
+  "text": "Seize the moments of happiness, love and be loved! That is the only reality in the world, all else is folly"
+ },
+ {
+  "id": "russian-09",
+  "tradition": "russian",
+  "file": "resurrection.txt",
+  "author": "Leo Tolstoy",
+  "book": "Resurrection",
+  "translator": "Louise Maude",
+  "text": "Men are like rivers: the water is the same in each, and alike in all; but every river is narrow here, is more rapid there, here slower, there broader, now clear, now cold, now dull, now warm"
+ },
+ {
+  "id": "russian-10",
+  "tradition": "russian",
+  "file": "se_confession_maude.txt",
+  "author": "Leo Tolstoy",
+  "book": "A Confession",
+  "translator": "Aylmer Maude",
+  "text": "Faith is the strength of life. If a man lives he believes in something"
+ },
+ {
+  "id": "scripture-01",
+  "tradition": "scripture",
+  "file": "kjv",
+  "verse": [
+   25,
+   3,
+   [
+    22,
+    23
+   ]
+  ],
+  "where": "Lamentations 3:22–23",
+  "text": ""
+ },
+ {
+  "id": "scripture-02",
+  "tradition": "scripture",
+  "file": "kjv",
+  "verse": [
+   19,
+   30,
+   [
+    5
+   ]
+  ],
+  "where": "Psalm 30:5",
+  "text": ""
+ },
+ {
+  "id": "scripture-03",
+  "tradition": "scripture",
+  "file": "kjv",
+  "verse": [
+   19,
+   118,
+   [
+    24
+   ]
+  ],
+  "where": "Psalm 118:24",
+  "text": ""
+ },
+ {
+  "id": "scripture-04",
+  "tradition": "scripture",
+  "file": "kjv",
+  "verse": [
+   19,
+   5,
+   [
+    3
+   ]
+  ],
+  "where": "Psalm 5:3",
+  "text": ""
+ },
+ {
+  "id": "scripture-05",
+  "tradition": "scripture",
+  "file": "kjv",
+  "verse": [
+   20,
+   4,
+   [
+    18
+   ]
+  ],
+  "where": "Proverbs 4:18",
+  "text": ""
+ },
+ {
+  "id": "scripture-06",
+  "tradition": "scripture",
+  "file": "kjv",
+  "verse": [
+   21,
+   3,
+   [
+    1
+   ]
+  ],
+  "where": "Ecclesiastes 3:1",
+  "text": ""
+ },
+ {
+  "id": "scripture-07",
+  "tradition": "scripture",
+  "file": "kjv",
+  "verse": [
+   33,
+   6,
+   [
+    8
+   ]
+  ],
+  "where": "Micah 6:8",
+  "text": ""
+ },
+ {
+  "id": "scripture-08",
+  "tradition": "scripture",
+  "file": "kjv",
+  "verse": [
+   40,
+   6,
+   [
+    34
+   ]
+  ],
+  "where": "Matthew 6:34",
+  "text": ""
+ },
+ {
+  "id": "scripture-09",
+  "tradition": "scripture",
+  "file": "kjv",
+  "verse": [
+   20,
+   16,
+   [
+    32
+   ]
+  ],
+  "where": "Proverbs 16:32",
+  "text": ""
+ },
+ {
+  "id": "scripture-10",
+  "tradition": "scripture",
+  "file": "kjv",
+  "verse": [
+   23,
+   40,
+   [
+    31
+   ]
+  ],
+  "where": "Isaiah 40:31",
+  "text": ""
+ },
+ {
+  "id": "scifi-01",
+  "tradition": "scifi",
+  "file": "frankenstein.txt",
+  "author": "Mary Shelley",
+  "book": "Frankenstein (1831 text)",
+  "translator": null,
+  "text": "What can stop the determined heart and resolved will of man"
+ },
+ {
+  "id": "scifi-02",
+  "tradition": "scifi",
+  "file": "frankenstein.txt",
+  "author": "Mary Shelley",
+  "book": "Frankenstein (1831 text)",
+  "translator": null,
+  "text": "Nothing is so painful to the human mind as a great and sudden change"
+ },
+ {
+  "id": "scifi-03",
+  "tradition": "scifi",
+  "file": "frankenstein.txt",
+  "author": "Mary Shelley",
+  "book": "Frankenstein (1831 text)",
+  "translator": null,
+  "text": "I was benevolent and good; misery made me a fiend. Make me happy, and I shall again be virtuous"
+ },
+ {
+  "id": "scifi-04",
+  "tradition": "scifi",
+  "file": "frankenstein.txt",
+  "author": "Mary Shelley",
+  "book": "Frankenstein (1831 text)",
+  "translator": null,
+  "text": "Beware, for I am fearless and therefore powerful"
+ },
+ {
+  "id": "scifi-05",
+  "tradition": "scifi",
+  "file": "timemachine.txt",
+  "author": "H. G. Wells",
+  "book": "The Time Machine",
+  "translator": null,
+  "text": "There is no intelligence where there is no change and no need of change"
+ },
+ {
+  "id": "scifi-06",
+  "tradition": "scifi",
+  "file": "timemachine.txt",
+  "author": "H. G. Wells",
+  "book": "The Time Machine",
+  "translator": null,
+  "text": "Strength is the outcome of need; security sets a premium on feebleness"
+ },
+ {
+  "id": "scifi-07",
+  "tradition": "scifi",
+  "file": "timemachine.txt",
+  "author": "H. G. Wells",
+  "book": "The Time Machine",
+  "translator": null,
+  "text": "And I have by me, for my comfort, two strange white flowers shrivelled now, and brown and flat and brittle to witness that even when mind and strength had gone, gratitude and a mutual tenderness still lived on in the heart of man"
+ },
+ {
+  "id": "scifi-08",
+  "tradition": "scifi",
+  "file": "flatland.txt",
+  "author": "Edwin A. Abbott",
+  "book": "Flatland",
+  "translator": null,
+  "text": "it is Knowledge; it is Three Dimensions: open your eye once again and try to look steadily"
+ },
+ {
+  "id": "scifi-09",
+  "tradition": "scifi",
+  "file": "flatland.txt",
+  "author": "Edwin A. Abbott",
+  "book": "Flatland",
+  "translator": null,
+  "text": "In that blessed region of Four Dimensions, shall we linger at the threshold of the Fifth, and not enter therein"
+ },
+ {
+  "id": "scifi-10",
+  "tradition": "scifi",
+  "file": "utopia.txt",
+  "author": "H. G. Wells",
+  "book": "A Modern Utopia",
+  "translator": null,
+  "text": "Indeed Will is stronger than Fact, it can mould and overcome Fact"
+ }
+]

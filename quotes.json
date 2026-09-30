@@ -1,0 +1,405 @@
+{
+  "version": 1,
+  "quotes": [
+    {
+      "id": "stoic-01",
+      "tradition": "stoic",
+      "text": "Begin the morning by saying to thyself, I shall meet with the busybody, the ungrateful, arrogant, deceitful, envious, unsocial.",
+      "book": "Meditations",
+      "author": "Marcus Aurelius",
+      "translator": "George Long",
+      "where": "Book II",
+      "checkedAgainst": "Standard Ebooks edition of George Long's translation"
+    },
+    {
+      "id": "stoic-02",
+      "tradition": "stoic",
+      "text": "In the morning when thou risest unwillingly, let this thought be present—I am rising to the work of a human being.",
+      "book": "Meditations",
+      "author": "Marcus Aurelius",
+      "translator": "George Long",
+      "where": "Book V",
+      "checkedAgainst": "Standard Ebooks edition of George Long's translation"
+    },
+    {
+      "id": "stoic-03",
+      "tradition": "stoic",
+      "text": "Such as are thy habitual thoughts, such also will be the character of thy mind; for the soul is dyed by the thoughts.",
+      "book": "Meditations",
+      "author": "Marcus Aurelius",
+      "translator": "George Long",
+      "where": "Book V",
+      "checkedAgainst": "Standard Ebooks edition of George Long's translation"
+    },
+    {
+      "id": "stoic-04",
+      "tradition": "stoic",
+      "text": "No longer talk at all about the kind of man that a good man ought to be, but be such.",
+      "book": "Meditations",
+      "author": "Marcus Aurelius",
+      "translator": "George Long",
+      "where": "Book X",
+      "checkedAgainst": "Standard Ebooks edition of George Long's translation"
+    },
+    {
+      "id": "stoic-05",
+      "tradition": "stoic",
+      "text": "The best way of avenging thyself is not to become like the wrong doer.",
+      "book": "Meditations",
+      "author": "Marcus Aurelius",
+      "translator": "George Long",
+      "where": "Book VI",
+      "checkedAgainst": "Standard Ebooks edition of George Long's translation"
+    },
+    {
+      "id": "stoic-06",
+      "tradition": "stoic",
+      "text": "Look within. Within is the fountain of good, and it will ever bubble up, if thou wilt ever dig.",
+      "book": "Meditations",
+      "author": "Marcus Aurelius",
+      "translator": "George Long",
+      "where": "Book VII",
+      "checkedAgainst": "Standard Ebooks edition of George Long's translation"
+    },
+    {
+      "id": "stoic-07",
+      "tradition": "stoic",
+      "text": "Loss is nothing else than change.",
+      "book": "Meditations",
+      "author": "Marcus Aurelius",
+      "translator": "George Long",
+      "where": "Book IX",
+      "checkedAgainst": "Standard Ebooks edition of George Long's translation"
+    },
+    {
+      "id": "stoic-08",
+      "tradition": "stoic",
+      "text": "Of things some are in our power, and others are not.",
+      "book": "The Enchiridion",
+      "author": "Epictetus",
+      "translator": "George Long",
+      "where": "Chapter I",
+      "checkedAgainst": "Standard Ebooks edition of George Long's translation"
+    },
+    {
+      "id": "stoic-09",
+      "tradition": "stoic",
+      "text": "Men are disturbed not by the things which happen, but by the opinions about the things.",
+      "book": "The Enchiridion",
+      "author": "Epictetus",
+      "translator": "George Long",
+      "where": "Chapter V",
+      "checkedAgainst": "Standard Ebooks edition of George Long's translation"
+    },
+    {
+      "id": "stoic-10",
+      "tradition": "stoic",
+      "text": "Seek not that the things which happen should happen as you wish; but wish the things which happen to be as they are, and you will have a tranquil flow of life.",
+      "book": "The Enchiridion",
+      "author": "Epictetus",
+      "translator": "George Long",
+      "where": "Chapter VIII",
+      "checkedAgainst": "Standard Ebooks edition of George Long's translation"
+    },
+    {
+      "id": "russian-01",
+      "tradition": "russian",
+      "text": "Above all, don't lie to yourself. The man who lies to himself and listens to his own lie comes to such a pass that he cannot distinguish the truth within him, or around him, and so loses all respect for himself and for others.",
+      "book": "The Brothers Karamazov",
+      "author": "Fyodor Dostoevsky",
+      "translator": "Constance Garnett",
+      "where": "Book II, Chapter II",
+      "checkedAgainst": "Project Gutenberg #28054, Garnett translation"
+    },
+    {
+      "id": "russian-02",
+      "tradition": "russian",
+      "text": "Love in action is a harsh and dreadful thing compared with love in dreams.",
+      "book": "The Brothers Karamazov",
+      "author": "Fyodor Dostoevsky",
+      "translator": "Constance Garnett",
+      "where": "Book II, Chapter IV",
+      "checkedAgainst": "Project Gutenberg #28054, Garnett translation"
+    },
+    {
+      "id": "russian-03",
+      "tradition": "russian",
+      "text": "Love all God's creation, the whole and every grain of sand in it. Love every leaf, every ray of God's light.",
+      "book": "The Brothers Karamazov",
+      "author": "Fyodor Dostoevsky",
+      "translator": "Constance Garnett",
+      "where": "Book VI, Chapter III",
+      "checkedAgainst": "Project Gutenberg #28054, Garnett translation"
+    },
+    {
+      "id": "russian-04",
+      "tradition": "russian",
+      "text": "To go wrong in one's own way is better than to go right in someone else's.",
+      "book": "Crime and Punishment",
+      "author": "Fyodor Dostoevsky",
+      "translator": "Constance Garnett",
+      "where": "Part III, Chapter I",
+      "checkedAgainst": "Project Gutenberg #2554, Garnett translation"
+    },
+    {
+      "id": "russian-05",
+      "tradition": "russian",
+      "text": "It would be interesting to know what it is men are most afraid of. Taking a new step, uttering a new word is what they fear most.",
+      "book": "Crime and Punishment",
+      "author": "Fyodor Dostoevsky",
+      "translator": "Constance Garnett",
+      "where": "Part I, Chapter I",
+      "checkedAgainst": "Project Gutenberg #2554, Garnett translation"
+    },
+    {
+      "id": "russian-06",
+      "tradition": "russian",
+      "text": "We imagine that when we are thrown out of our usual ruts all is lost, but it is only then that what is new and good begins. While there is life there is happiness.",
+      "book": "War and Peace",
+      "author": "Leo Tolstoy",
+      "translator": "Louise and Aylmer Maude",
+      "where": "Book Fifteen, Chapter XVII",
+      "checkedAgainst": "Project Gutenberg #2600, Maude translation"
+    },
+    {
+      "id": "russian-07",
+      "tradition": "russian",
+      "text": "Everything comes in time to him who knows how to wait.",
+      "book": "War and Peace",
+      "author": "Leo Tolstoy",
+      "translator": "Louise and Aylmer Maude",
+      "where": "Book Ten, Chapter XVI",
+      "checkedAgainst": "Project Gutenberg #2600, Maude translation"
+    },
+    {
+      "id": "russian-08",
+      "tradition": "russian",
+      "text": "Seize the moments of happiness, love and be loved! That is the only reality in the world, all else is folly.",
+      "book": "War and Peace",
+      "author": "Leo Tolstoy",
+      "translator": "Louise and Aylmer Maude",
+      "where": "Book Four, Chapter XI",
+      "checkedAgainst": "Project Gutenberg #2600, Maude translation"
+    },
+    {
+      "id": "russian-09",
+      "tradition": "russian",
+      "text": "Men are like rivers: the water is the same in each, and alike in all; but every river is narrow here, is more rapid there, here slower, there broader, now clear, now cold, now dull, now warm.",
+      "book": "Resurrection",
+      "author": "Leo Tolstoy",
+      "translator": "Louise Maude",
+      "where": "Book I, Chapter LIX",
+      "checkedAgainst": "Project Gutenberg #1938, Louise Maude translation"
+    },
+    {
+      "id": "russian-10",
+      "tradition": "russian",
+      "text": "Faith is the strength of life. If a man lives he believes in something.",
+      "book": "A Confession",
+      "author": "Leo Tolstoy",
+      "translator": "Aylmer Maude",
+      "where": "Chapter IX",
+      "checkedAgainst": "Standard Ebooks edition of Aylmer Maude's translation"
+    },
+    {
+      "id": "scifi-01",
+      "tradition": "scifi",
+      "text": "What can stop the determined heart and resolved will of man?",
+      "book": "Frankenstein (1831 text)",
+      "author": "Mary Shelley",
+      "translator": null,
+      "where": "Letter 3",
+      "checkedAgainst": "Project Gutenberg #84, 1831 text"
+    },
+    {
+      "id": "scifi-02",
+      "tradition": "scifi",
+      "text": "Nothing is so painful to the human mind as a great and sudden change.",
+      "book": "Frankenstein (1831 text)",
+      "author": "Mary Shelley",
+      "translator": null,
+      "where": "Chapter 23",
+      "checkedAgainst": "Project Gutenberg #84, 1831 text"
+    },
+    {
+      "id": "scifi-03",
+      "tradition": "scifi",
+      "text": "I was benevolent and good; misery made me a fiend. Make me happy, and I shall again be virtuous.",
+      "book": "Frankenstein (1831 text)",
+      "author": "Mary Shelley",
+      "translator": null,
+      "where": "Chapter 10",
+      "checkedAgainst": "Project Gutenberg #84, 1831 text"
+    },
+    {
+      "id": "scifi-04",
+      "tradition": "scifi",
+      "text": "Beware, for I am fearless and therefore powerful.",
+      "book": "Frankenstein (1831 text)",
+      "author": "Mary Shelley",
+      "translator": null,
+      "where": "Chapter 20",
+      "checkedAgainst": "Project Gutenberg #84, 1831 text"
+    },
+    {
+      "id": "scifi-05",
+      "tradition": "scifi",
+      "text": "There is no intelligence where there is no change and no need of change.",
+      "book": "The Time Machine",
+      "author": "H. G. Wells",
+      "translator": null,
+      "where": "Chapter X",
+      "checkedAgainst": "Project Gutenberg #35"
+    },
+    {
+      "id": "scifi-06",
+      "tradition": "scifi",
+      "text": "Strength is the outcome of need; security sets a premium on feebleness.",
+      "book": "The Time Machine",
+      "author": "H. G. Wells",
+      "translator": null,
+      "where": "Chapter IV",
+      "checkedAgainst": "Project Gutenberg #35"
+    },
+    {
+      "id": "scifi-07",
+      "tradition": "scifi",
+      "text": "And I have by me, for my comfort, two strange white flowers—shrivelled now, and brown and flat and brittle—to witness that even when mind and strength had gone, gratitude and a mutual tenderness still lived on in the heart of man.",
+      "book": "The Time Machine",
+      "author": "H. G. Wells",
+      "translator": null,
+      "where": "Epilogue",
+      "checkedAgainst": "Project Gutenberg #35"
+    },
+    {
+      "id": "scifi-08",
+      "tradition": "scifi",
+      "text": "It is Knowledge; it is Three Dimensions: open your eye once again and try to look steadily.",
+      "book": "Flatland",
+      "author": "Edwin A. Abbott",
+      "translator": null,
+      "where": "Section 18",
+      "checkedAgainst": "Project Gutenberg #97"
+    },
+    {
+      "id": "scifi-09",
+      "tradition": "scifi",
+      "text": "In that blessed region of Four Dimensions, shall we linger at the threshold of the Fifth, and not enter therein?",
+      "book": "Flatland",
+      "author": "Edwin A. Abbott",
+      "translator": null,
+      "where": "Section 19",
+      "checkedAgainst": "Project Gutenberg #97"
+    },
+    {
+      "id": "scifi-10",
+      "tradition": "scifi",
+      "text": "Indeed Will is stronger than Fact, it can mould and overcome Fact.",
+      "book": "A Modern Utopia",
+      "author": "H. G. Wells",
+      "translator": null,
+      "where": "Chapter 11",
+      "checkedAgainst": "Project Gutenberg #6424"
+    },
+    {
+      "id": "scripture-01",
+      "tradition": "scripture",
+      "text": "It is of the LORD's mercies that we are not consumed, because his compassions fail not. They are new every morning: great is thy faithfulness.",
+      "book": "The Bible",
+      "author": null,
+      "translator": "King James Version (1611)",
+      "where": "Lamentations 3:22–23",
+      "checkedAgainst": "Project Gutenberg #30, King James Version"
+    },
+    {
+      "id": "scripture-02",
+      "tradition": "scripture",
+      "text": "For his anger endureth but a moment; in his favour is life: weeping may endure for a night, but joy cometh in the morning.",
+      "book": "The Bible",
+      "author": null,
+      "translator": "King James Version (1611)",
+      "where": "Psalm 30:5",
+      "checkedAgainst": "Project Gutenberg #30, King James Version"
+    },
+    {
+      "id": "scripture-03",
+      "tradition": "scripture",
+      "text": "This is the day which the LORD hath made; we will rejoice and be glad in it.",
+      "book": "The Bible",
+      "author": null,
+      "translator": "King James Version (1611)",
+      "where": "Psalm 118:24",
+      "checkedAgainst": "Project Gutenberg #30, King James Version"
+    },
+    {
+      "id": "scripture-04",
+      "tradition": "scripture",
+      "text": "My voice shalt thou hear in the morning, O LORD; in the morning will I direct my prayer unto thee, and will look up.",
+      "book": "The Bible",
+      "author": null,
+      "translator": "King James Version (1611)",
+      "where": "Psalm 5:3",
+      "checkedAgainst": "Project Gutenberg #30, King James Version"
+    },
+    {
+      "id": "scripture-05",
+      "tradition": "scripture",
+      "text": "But the path of the just is as the shining light, that shineth more and more unto the perfect day.",
+      "book": "The Bible",
+      "author": null,
+      "translator": "King James Version (1611)",
+      "where": "Proverbs 4:18",
+      "checkedAgainst": "Project Gutenberg #30, King James Version"
+    },
+    {
+      "id": "scripture-06",
+      "tradition": "scripture",
+      "text": "To every thing there is a season, and a time to every purpose under the heaven.",
+      "book": "The Bible",
+      "author": null,
+      "translator": "King James Version (1611)",
+      "where": "Ecclesiastes 3:1",
+      "checkedAgainst": "Project Gutenberg #30, King James Version"
+    },
+    {
+      "id": "scripture-07",
+      "tradition": "scripture",
+      "text": "He hath shewed thee, O man, what is good; and what doth the LORD require of thee, but to do justly, and to love mercy, and to walk humbly with thy God?",
+      "book": "The Bible",
+      "author": null,
+      "translator": "King James Version (1611)",
+      "where": "Micah 6:8",
+      "checkedAgainst": "Project Gutenberg #30, King James Version"
+    },
+    {
+      "id": "scripture-08",
+      "tradition": "scripture",
+      "text": "Take therefore no thought for the morrow: for the morrow shall take thought for the things of itself. Sufficient unto the day is the evil thereof.",
+      "book": "The Bible",
+      "author": null,
+      "translator": "King James Version (1611)",
+      "where": "Matthew 6:34",
+      "checkedAgainst": "Project Gutenberg #30, King James Version"
+    },
+    {
+      "id": "scripture-09",
+      "tradition": "scripture",
+      "text": "He that is slow to anger is better than the mighty; and he that ruleth his spirit than he that taketh a city.",
+      "book": "The Bible",
+      "author": null,
+      "translator": "King James Version (1611)",
+      "where": "Proverbs 16:32",
+      "checkedAgainst": "Project Gutenberg #30, King James Version"
+    },
+    {
+      "id": "scripture-10",
+      "tradition": "scripture",
+      "text": "But they that wait upon the LORD shall renew their strength; they shall mount up with wings as eagles; they shall run, and not be weary; and they shall walk, and not faint.",
+      "book": "The Bible",
+      "author": null,
+      "translator": "King James Version (1611)",
+      "where": "Isaiah 40:31",
+      "checkedAgainst": "Project Gutenberg #30, King James Version"
+    }
+  ]
+}
