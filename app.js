@@ -192,8 +192,15 @@ function updateCount() {
 
 function saveComment(event) {
   event.preventDefault();
+  const text = $("comment").value.trim().slice(0, 200);
+  // An empty box with nothing recorded for this quote: nothing to save. This also keeps
+  // an empty Save from wiping a reaction you gave today's quote in another tradition.
+  if (!text && !todayRecord()) {
+    $("comment").blur();
+    return;
+  }
   const record = recordForEdit();
-  record.comment = $("comment").value.trim().slice(0, 200);
+  record.comment = text;
   saveState();
   $("comment").blur();
   render();
@@ -272,9 +279,9 @@ async function remindIfNeeded() {
   } catch (e) {}
 }
 
-// Android Chrome can wake an installed app's service worker about once a day
-// ("periodic background sync"), even when the app is closed. The phone picks the
-// exact moment, so this reminder comes at or after your time, not on the minute.
+// Android Chrome can wake an installed app's service worker now and then, at most
+// about twice a day ("periodic background sync"), even when the app is closed. The phone
+// picks the exact moment, so this reminder comes at or after your time, not on the minute.
 async function askForDailyWakeUp() {
   try {
     const reg = await navigator.serviceWorker.ready;

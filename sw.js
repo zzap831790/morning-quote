@@ -2,7 +2,7 @@
 // Job 1: keep a copy of the app's files so it opens with no internet.
 // Job 2: show the morning reminder, and open the app when you tap it.
 
-const FILES_CACHE = "morning-quote-files-v1";
+const FILES_CACHE = "morning-quote-files-v2";
 const STATE_CACHE = "morning-quote-state";   // the note app.js leaves for us
 const FILES = [
   "./",
@@ -14,6 +14,7 @@ const FILES = [
   "icons/icon-192.png",
   "icons/icon-512.png",
   "icons/apple-touch-icon.png",
+  "icons/icon-maskable-512.png",
 ];
 
 // First visit: save a copy of every file.
@@ -35,24 +36,36 @@ self.addEventListener("activate", (event) => {
 
 // Every time the app asks for a file: try the internet first, so you always get
 // the newest version, and keep the answer as the new saved copy.
-// No internet: hand back the saved copy instead.
+// If the internet does not answer within a second and a half, or not at all, hand back
+// the saved copy instead; the internet answer, when it comes, still refreshes the copy.
+// Only when there is no saved copy does the app wait for the internet however long it takes.
+const NETWORK_WAIT = 1500;   // milliseconds; GitHub Pages usually answers well under a second
+
 self.addEventListener("fetch", (event) => {
   const request = event.request;
   if (request.method !== "GET" || new URL(request.url).origin !== self.location.origin) return;
-  event.respondWith(
-    fetch(request)
-      .then((response) => {
-        if (response.ok) {
-          const copy = response.clone();
-          caches.open(FILES_CACHE).then((cache) => cache.put(request, copy));
-        }
-        return response;
-      })
-      .catch(() => caches.match(request, { ignoreSearch: true }))
-  );
+  let saving = Promise.resolve();
+  const network = fetch(request).then((response) => {
+    if (response.ok) {
+      const copy = response.clone();
+      saving = caches.open(FILES_CACHE).then((cache) => cache.put(request, copy));
+    }
+    return response;
+  });
+  event.waitUntil(network.then(() => saving).catch(() => {}));   // stay alive until the copy is saved
+  event.respondWith(respond(request, network));
 });
 
-// Android Chrome wakes us about once a day (the phone picks when).
+async function respond(request, network) {
+  const slow = new Promise((resolve) => setTimeout(resolve, NETWORK_WAIT, "slow"));
+  const first = await Promise.race([network.catch(() => "failed"), slow]);
+  if (first !== "slow" && first !== "failed") return first;
+  const saved = await caches.match(request, { ignoreSearch: true });
+  if (saved) return saved;
+  return network;
+}
+
+// Android Chrome wakes us now and then, at most about twice a day (the phone picks when).
 // If your reminder time has passed and you have not reacted today, ring once.
 self.addEventListener("periodicsync", (event) => {
   if (event.tag === "morning-reminder") event.waitUntil(checkReminder());

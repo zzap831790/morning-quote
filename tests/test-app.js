@@ -98,6 +98,18 @@ const check = (ok, what) => { console.log((ok ? "PASS " : "FAIL ") + what); if (
   stored = await page.evaluate(() => JSON.parse(localStorage.getItem("morning-quote-v1")));
   check(stored.settings.tradition === "stoic", "tradition setting stored");
 
+  // Switching tradition after reacting: the new quote shows blank, the streak stays,
+  // and an empty Save on the new quote must not wipe the reaction already given today
+  await page.selectOption("#tradition", "russian");
+  check((await page.locator("#emojis button[aria-pressed=true]").count()) === 0 && (await page.inputValue("#comment")) === "", "other tradition shows a blank reaction");
+  check((await page.textContent("#streak")) === "🔥 3 days", "streak survives the switch");
+  await page.click("#save");
+  stored = await page.evaluate(() => JSON.parse(localStorage.getItem("morning-quote-v1")));
+  check(stored.days["2026-09-30"].quoteId === expectStoic.id && stored.days["2026-09-30"].emoji === "❤️", "empty Save on the other tradition keeps today's reaction");
+  check((await page.textContent("#streak")) === "🔥 3 days", "streak survives the empty Save");
+  await page.selectOption("#tradition", "stoic");
+  check((await page.locator("#emojis button").nth(0).getAttribute("aria-pressed")) === "true", "back on Stoic, the reaction is still marked");
+
   // Reminder time and bell
   await page.fill("#reminder-time", "06:30");
   await page.dispatchEvent("#reminder-time", "change");

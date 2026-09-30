@@ -11,7 +11,7 @@ Live at **https://zzap831790.github.io/morning-quote/**
 
 ## What is in this folder, file by file
 
-The app is seven files and a folder of icons. No framework, no server, no build step: GitHub Pages hands these files to your phone exactly as they are.
+The app is six files and a folder of icons, plus two housekeeping files. No framework, no server, no build step: GitHub Pages hands these files to your phone exactly as they are.
 
 - **`index.html`** is the skeleton of the one screen. It lists what is on the screen, top to bottom: the date and streak, the quote card, the five emoji, the comment box, the settings. It holds no logic and no colors; it points to the files that do.
 - **`style.css`** is the look: colors, fonts, spacing. It is written for a phone first. All colors sit at the top as named values, with a second set for dark mode, which the phone switches on by itself.
@@ -32,7 +32,7 @@ Two folders are workshop tools. The phone never loads them.
 
 1. The phone asks GitHub Pages for `index.html`. The page asks for `style.css` and `app.js`.
 2. `app.js` asks for `quotes.json`, picks today's quote, and draws the screen.
-3. `app.js` also registers `sw.js`. From then on, every file request passes through the service worker, which fetches the newest copy from the internet and keeps it. With no internet, it hands back the saved copy.
+3. `app.js` also registers `sw.js`. From then on, every file request passes through the service worker, which fetches the newest copy from the internet and keeps it. If the internet does not answer within a second and a half, or not at all, it hands back the saved copy instead, so a weak signal never holds up the quote; the internet answer, when it comes, still refreshes the saved copy for next time.
 4. When you tap an emoji or save a comment, `app.js` writes it into **localStorage**, a small notebook the browser keeps for each website, on your phone only.
 
 ## Where your data lives
@@ -77,7 +77,7 @@ What was checked for version 1:
 
 ## Changing the app
 
-Edit a file, commit, push to `main`. GitHub Pages republishes in about a minute. The phone picks up the new version the next time the app opens with internet, because the service worker always tries the internet first.
+Edit a file, commit, push to `main`. GitHub Pages republishes in about a minute. The phone picks up the new version the next time the app opens with a decent connection, because the service worker tries the internet first. On a weak connection it shows the saved copy and refreshes it in the background, so the new version arrives one open later. When a change touches several files at once, also bump `FILES_CACHE` in `sw.js` (v2 to v3, and so on), so every phone replaces its saved copies as one matching set.
 
 ## Testing
 
@@ -85,9 +85,10 @@ The tests in `tests/` use Playwright, a tool that drives a real Chrome browser f
 
 - `test-app.js` checks every feature on a phone-sized screen: today's quote, emoji, the 200 character cap, the streak across days, the four traditions, the reminder, offline, the manifest and icons.
 - `test-fit.js` shows all 40 quotes on four phone sizes and reports any that spill past one screen.
-- `test-sync.js` fires Android's once-a-day wake up by hand and checks that the closed-app reminder rings only when it should.
+- `test-sync.js` fires Android's now-and-then wake up by hand and checks that the closed-app reminder rings only when it should.
+- `test-slow.js` starts its own server that answers every file eight seconds late, and checks that the app still shows the quote from its saved copy within a few seconds.
 
-To run them: from the folder that holds `morning-quote`, start `python3 -m http.server 8765`, then run `node morning-quote/tests/test-app.js /tmp` (and the other two).
+To run them: from the folder that holds `morning-quote`, start `python3 -m http.server 8765`, then run `node morning-quote/tests/test-app.js /tmp` (and the other three; `test-slow.js` needs no server of yours). If Playwright is installed globally rather than in this folder, set `NODE_PATH=$(npm root -g)` first. The tests launch Chrome with `--headless=new` on purpose: the older headless mode refuses notifications whatever permission it is given.
 
 ## Credits
 
